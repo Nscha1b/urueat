@@ -1,0 +1,7 @@
+{
+  "name": "urueat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
