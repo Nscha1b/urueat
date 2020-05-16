@@ -5,7 +5,6 @@ var logger = require('morgan');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
-var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -38,7 +37,6 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 module.exports = app;
